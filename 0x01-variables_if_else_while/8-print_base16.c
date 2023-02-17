@@ -16,12 +16,12 @@ int main(void)
 		if (n < 10)
 		{
 			putchar('0' + n);
-					}
-					else
-					{
-					putchar(87 + n);
-					}
-					}
-					putchar('\n');
-					return (0);
-					}
+		}
+		else
+		{
+			putchar(87 + n);
+		}
+	}
+	putchar('\n');
+	return (0);
+}
