@@ -8,36 +8,27 @@
 
 int main(void)
 {
-	int thor;
-	int hunny;
-	int tenny;
-	int base;
+	int n1, n2;
 
-for ( thor = 0 ; thor < 10 ; thor++)
-{
-
-	for (hunny = 0 ; hunny <= 10 ; hunny++)
+	for (n1 = 0; n1 <= 98; n1++)
 	{
-
-		for (tenny = 0 ; tenny < 10 ; tenny++)
+		for (n2 = n1 + 1; n2 <= 99; n2++)
 		{
-			for ( base = 0 ; base < 10 ; base++)
-			{
-				putchar('0' + thor);
-				putchar('0' + hunny);
-				putchar(32);
-				putchar('0' + tenny);
-				putchar('0' + base);
-				if (!(thor == 9 && hunny == 8))
-				{
-					putchar(',');
-					putchar(32);
-				}
-				base++;
-			}
+			putchar((n1 / 10) + '0');
+			putchar((n1 % 10) + '0');
+			putchar(' ');
+			putchar((n2 / 10) + '0');
+			putchar((n2 % 10) + '0');
+
+			if (n1 == 98 && n2 == 99)
+				continue;
+
+			putchar(',');
+			putchar(' ');
 		}
 	}
-}
+
 	putchar('\n');
+
 	return (0);
 }
