@@ -41,4 +41,3 @@ for ( thor = 0 ; thor < 10 ; thor++)
 	putchar('\n');
 	return (0);
 }
-i
