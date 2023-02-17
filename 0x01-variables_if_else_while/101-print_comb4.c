@@ -26,8 +26,8 @@ int main(void)
 					putchar(',');
 					putchar(32);
 				}
-				i++;
-			} while (i != 10);
+				a++;
+			} while (a != 10);
 		}
 	}
 	putchar('\n');
