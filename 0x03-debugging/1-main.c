@@ -10,9 +10,14 @@ int main(void)
 {
 	int i;
 
-	printf("Infinitee loop coming :(\n");
+	printf("Infinite loop coming :(\n");
 
 	i = 0;
+
+	/*while (i < 10)*/
+	/*{*/
+	/* putchar(i);*/
+	/*}*/
 
 	printf("Infinite loop avoid! \\o/\n");
 	
