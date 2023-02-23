@@ -7,7 +7,7 @@
 
 void print_diagonal(int n)
 {
-	int c, j;
+	int co, sp;
 
 	if (n <= 0)
 	{
@@ -15,9 +15,9 @@ void print_diagonal(int n)
 	}
 	else
 	{
-		for (c = 1; c <= n; c++)
+		for (co = 1; co <= n; co++)
 		{
-			for (j = 1; j < j; j++)
+			for (sp = 1; sp < co; sp++)
 			{
 				_putchar(' ');
 			}
@@ -26,3 +26,4 @@ void print_diagonal(int n)
 		}
 	}
 }
+
