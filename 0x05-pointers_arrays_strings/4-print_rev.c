@@ -1,25 +1,22 @@
 #include "main.h"
 /*
- * main - prints a string, in reverse
+ * main -
  *
- * Return: 0
+ * Return: string in rev
  */
-void print_re(char *s)
+void print_rev(char *s)
 {
-	int longi = 0;
-	int o;
+	int fcounter = 0;
+	int i, n;
 
-	while (*s != '\0')
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		longi++;
-		s++;
-	}
-	s--;
-	for (o = longi; o >0; o--)
-	{
-		_putchar(*s);
-		s--;
+		fcounter++;
 	}
 
+	for (n = (fcounter - 1); n >= 0; n--)
+	{
+		_putchar(s[n]);
+	}
 	_putchar('\n');
 }
