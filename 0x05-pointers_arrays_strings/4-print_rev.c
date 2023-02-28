@@ -4,7 +4,7 @@
  *
  * Return: 0
  */
-void print_rev(char *s)
+void print_re(char *s)
 {
 	int longi = 0;
 	int o;
@@ -15,7 +15,7 @@ void print_rev(char *s)
 		s++;
 	}
 	s--;
-	for (o = longil o > 0; o--)
+	for (o = longi; o >0; o--)
 	{
 		_putchar(*s);
 		s--;
