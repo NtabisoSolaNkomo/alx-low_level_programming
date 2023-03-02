@@ -6,22 +6,23 @@
  */
 char *strcat(char *dest, char *src)
 {
+	int len1;
+	int len2;
 	int i;
-	int j;
 
-	i =0;
-	while (dest[i] != '\0')
-	{
-		i++;
-	}
-	j = 0;
-	while(src[j] != '\0')
-	{
-		dest[i] = src[j];
-		i++;
-		j++;
-	}
+	len1 = 0;
+	len2 = 0;
 
-	dest[i] = '\0';
+	while (src[len1] != '\0')
+		len1++;
+
+	while (dest[len2] != '\0')
+		len2++;
+
+	for (i = 0; i <= len1; i++)
+	{
+		dest[len2] = src[i];
+		len2++;
+	}
 	return (dest);
 }
