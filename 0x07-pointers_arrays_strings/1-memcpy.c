@@ -4,12 +4,16 @@
  *
  * Return:
  */
-char *memcpy(char *dest, char *src, unsigned int n)
+char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	unsigned int i;
+	int r = 0;
+	int i = n;
 
-	for (i = 0; i < n; i++)
-		dest[i] = src[i];
-
+	for (; r < i; r++)
+	{
+		dest[r] = src[r];
+		n--;
+	}
 	return (dest);
 }
+
